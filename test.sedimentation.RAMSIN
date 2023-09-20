@@ -1,0 +1,116 @@
+
+&mcphys_setting
+
+numsteps       = 60 ! Number of SCM timesteps to run
+iprntstatic    = 0  ! Write out unchanging variables (0=off, 1=on)
+initcustom     = 1  ! Microphysics customization (call init_custom) (0=off, 1=on)
+inegadj        = 0  ! Negative adjustment scheme for micro and aerosol variables
+ithermo        = 0  ! Thermodynamic diagnosis updates of theta and rv
+ivapdiff       = 0  ! Vapor diffusion / evaporation
+iautoaccret    = 0  ! Cloud/rain autoconversion / accretion
+icldrime       = 0  ! Cloud droplet riming
+iselfcollragh  = 0  ! Rain,aggregates,graupel,hail self-collection
+iselfcollps    = 0  ! Pristine ice, snow self-collection
+icollps        = 0  ! Pristine ice, snow inter-collection
+icolliceice    = 0  ! Rain,aggregates,graupel,hail inter-collection
+icollicerain   = 0  ! Rain drops collected by ice species
+imelting       = 0  ! Melting of ice 
+icldnuc        = 0  ! Cloud / drizzle droplet nucleation
+iicenuc        = 0  ! Ice crystal nucleation
+isedimentation = 1  ! Sedimentation of hydrometeors
+ipress         = 0  ! 0 = use PI & PP,   1 = use pressure
+itheta         = 0  ! 0 = use THP,       1 = use THETA to start
+irv            = 0  ! 0 = use RTP,       1 = use RV to start
+iprntstmt    = 1
+ilwrtyp      = 0
+iswrtyp      = 0
+radfrq       = 600.
+icheckmic    = 0
+imbudget     = 0
+irime        = 1
+iplaws       = 2
+isedim       = 1
+icloud       = 0
+idriz        = 0
+irain        = 5
+ipris        = 0
+isnow        = 0
+iaggr        = 0
+igraup       = 0
+ihail        = 0
+cparm        = .3e9
+dparm        = .1e6
+rparm        = 1e-3
+pparm        = 0.
+sparm        = 1e-3
+aparm        = 1e-3
+gparm        = 1e-3
+hparm        = 3e-3
+gnu          = 4.
+              ,2.
+              ,2.
+              ,2.
+              ,2.
+              ,2.
+              ,2.
+              ,4.
+iaerosol     = 0
+idust        = 0
+isalt        = 0
+iabcarb      = 0
+idustloft    = 0
+dustfile     = "./src/etc/DustErodeFrac-Ginoux2001.txt"
+iccnlev      = 0
+iifn         = 0
+iifn_formula = 2
+iaerorad     = 0
+iaerodep     = 0
+iaeroprnt    = 0
+cin_max      = 1.0
+ccn1_max     = 1000.
+ccn2_max     = 0.01
+dust1_max    = 100.
+dust2_max    = 10.
+saltf_max    = 100.
+saltj_max    = 0.1
+salts_max    = 1.e-3
+abc1_max     = 100.
+abc2_max     = 100.
+iaero_chem   = 1
+              ,1
+              ,1
+              ,1
+              ,2
+              ,2
+              ,2
+              ,1
+              ,1
+              ,1
+              ,1
+aero_epsilon = 0.90
+              ,0.90
+              ,0.05
+              ,0.05
+              ,1.00
+              ,1.00
+              ,1.00
+              ,0.05
+              ,0.05
+              ,0.20
+              ,0.20
+aero_medrad  = 0.04e-6
+              ,3.00e-6
+              ,0.05e-6
+              ,0.50e-6
+              ,0.10e-6
+              ,1.00e-6
+              ,6.00e-6
+              ,0.05e-6
+              ,0.05e-6
+              ,0.01e-6
+              ,1.00e-6
+itrkepsilon  = 0
+itrKdust     = 0
+itrkdustifn  = 0
+
+/

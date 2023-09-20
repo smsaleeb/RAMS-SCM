@@ -1,0 +1,18 @@
+# ignore compile files
+*.a
+*.mod
+rams-scm
+
+# ignore temporary or system files
+.DS_Store
+*.swp
+.ipynb_checkpoints
+*.png
+anim.*
+
+# Ignore sample files
+z.out*
+scm.in*
+scm.out*
+AA.scm.in.out.data
+RAMSIN*
